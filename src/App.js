@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import side_bar from './img/side_bar.png'
+import top_bar from './img/top_bar.png'
+import NavBar from "./components/NavBar";
+import styled from "styled-components"
+import {BrowserRouter} from "react-router-dom";
+import AppRouter from "./components/AppRouter";
+
+const AppWrapper = styled.div`
+width:100%;
+min-height: 100vh;
+padding: 0;
+background: white;
+`
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <AppWrapper className="App-wrapper">
+          <NavBar/>
+          <AppRouter/>
+      </AppWrapper>
+    </BrowserRouter>
   );
 }
 
