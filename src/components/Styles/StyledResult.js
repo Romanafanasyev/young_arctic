@@ -5,9 +5,13 @@ const Ul = styled.ul`
   width: 100%;
   list-style-type: none;
   padding: 0;
-  top: 400px;
+  top: 420px;
   left:220px;
   overflow: hidden;
+`;
+
+const A = styled.a`
+  color:black;
 `;
 
 const Div = styled.div`
@@ -15,7 +19,7 @@ const Div = styled.div`
   &.Header {
     position: absolute;
     width: 100%;
-    top: 200px;
+    top: 190px;
     left: 220px;
     display: block;
     color: black;
@@ -34,8 +38,8 @@ const Div = styled.div`
 const Button = styled.button`
   &.btnDiv{
     position: absolute;
-    top:600px;
-    left:970px;
+    top:360px;
+    left:250px;
     display: block;
     color: black;
     text-align: center;
@@ -46,6 +50,21 @@ const Button = styled.button`
     border-radius: 10px;
     background: inherit;
   }
+  &.btnDiv_jobs{
+    position: absolute;
+    top:360px;
+    left:350px;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 10px;
+    background: inherit;
+  }
+}
   
   &:hover:not(.active) {
     background-color: #8673A1;
@@ -55,7 +74,7 @@ const Button = styled.button`
 
 const Li = styled.li`
   float: left;
-  width: 40%;
+  width: 70%;
   margin-right: 100px;
 
 
@@ -105,10 +124,10 @@ const Li = styled.li`
     float:right;
     margin-top:20px;
     width:150px;
-    font-size: 25px;
+    font-size: 15px;
     font-weight: normal;
     text-align: right;
   }
 `;
 
-export {Ul, Li, Div, Button};
+export {Ul, Li, Div, Button, A};
