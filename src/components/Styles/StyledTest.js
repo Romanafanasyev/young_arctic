@@ -26,6 +26,23 @@ const Div = styled.div`
   }
 `;
 
+const Button = styled.button`
+    margin-left: 230px;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 10px;
+    background: inherit;
+
+    &:hover:not(.active) {
+      background-color: #8673A1;
+      border: 1px solid white;
+      color:white;
+    }
+`;
 
 const Ul = styled.ul`
   //position: absolute;
@@ -83,4 +100,4 @@ const Li = styled.li`
   }
 `;
 
-export {Ul, Li, Div};
+export {Ul, Li, Div, Button};

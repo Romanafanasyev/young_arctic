@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {useHistory, useLocation} from "react-router-dom";
-import {Div, Li, Ul} from "../components/Styles/StyledTest"
+import {Div, Li, Ul, Button} from "../components/Styles/StyledTest"
 import {
     MAIN_ROUTE,
     RESULT_ROUTE,
@@ -127,12 +127,12 @@ const Test =() => {
             </Div>
             <Div className="quiz-indicator" id="indicator">{(DATA_questions.length+1)/2} вопросов</Div>
             <Div className="quiz-controls">
-                <button className="btn-next" id="btnNext" disabled hidden={true} >Далее</button>
-                <button hidden={true} className="btn-result" id="btnResult" onClick={finish_test}>Узнать результат</button>
+                <Button className="btn-next" id="btnNext" disabled hidden={true} >Далее</Button>
+                <Button hidden={true} className="btn-result" id="btnResult" onClick={finish_test}>Узнать результат</Button>
 
-                <button className="btn-start" id="btnStart" onClick={start_test}>Начать</button>
+                <Button className="btn-start" id="btnStart" onClick={start_test}>Начать</Button>
             </Div>
-            <button onClick={() => history.push(MAIN_ROUTE)}>Назад</button>
+            <Button onClick={() => history.push(MAIN_ROUTE)}>Назад</Button>
         </Div>
     );
 };

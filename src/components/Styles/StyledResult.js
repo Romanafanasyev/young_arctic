@@ -28,6 +28,29 @@ const Div = styled.div`
     border-radius: 10px;
     background: lightcyan;
   }
+  
+`;
+
+const Button = styled.button`
+  &.btnDiv{
+    position: absolute;
+    top:600px;
+    left:970px;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 10px;
+    background: inherit;
+  }
+  
+  &:hover:not(.active) {
+    background-color: #8673A1;
+    border: 1px solid white;
+    color:white;
 `;
 
 const Li = styled.li`
@@ -76,14 +99,16 @@ const Li = styled.li`
     font-size: 15px;
     font-weight: normal;
     text-align: left;
+    margin-bottom: 15px;
   }
   & p.salary {
-    position: relative;
-    top:75px;
+    float:right;
+    margin-top:20px;
+    width:150px;
     font-size: 25px;
     font-weight: normal;
     text-align: right;
   }
 `;
 
-export {Ul, Li, Div};
+export {Ul, Li, Div, Button};
